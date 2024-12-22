@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MeetMentor - AI Meeting Communication Advisor
 
-## Getting Started
+MeetMentor is an innovative AI-powered platform designed to help professionals enhance their meeting communication skills through personalized guidance and real-time feedback.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Intelligent Chat Interface**: Clean, intuitive design with real-time AI responses
+- **Speech-to-Text Support**: Easily practice verbal communication skills
+- **Custom-Trained AI**: Specialized Gemini Pro integration for meeting scenarios
+- **Secure Authentication**: Protected user sessions via Clerk
+- **Chat Management**: Organized conversation history with automatic title generation
+- **Responsive Design**: Seamless experience across desktop and mobile devices
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js 14, React, TypeScript, Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Authentication**: Clerk
+- **Database**: MongoDB
+- **AI Integration**: Google Gemini Pro API
+- **State Management**: React Hooks
+- **Styling**: Tailwind CSS
+
+## 📦 Project Structure
+
+```
+meetmentor/
+│   ├── app/              # Next.js app router pages
+│   ├── components/       # React components
+│   ├── lib/             # Utility functions and APIs
+│   ├── hooks/           # Custom React hooks
+│   └── types/           # TypeScript definitions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/meetmentor.git
+cd meetmentor
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Install dependencies**
+```bash
+npm install
+```
 
-## Learn More
+3. **Set up environment variables**
+Create a `.env` file in the root directory:
+```env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+MONGODB_URI=your_mongodb_uri
+GEMINI_API_KEY=your_gemini_api_key
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. **Run the development server**
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Visit `http://localhost:3000` to see the application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔑 Environment Variables
 
-## Deploy on Vercel
+- `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`: Clerk authentication public key
+- `CLERK_SECRET_KEY`: Clerk authentication secret key
+- `MONGODB_URI`: MongoDB connection string
+- `GEMINI_API_KEY`: Google Gemini Pro API key
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📱 Features in Development
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Advanced search functionality
+- Chat categorization
+- Export capabilities
+- Team collaboration features
+- Analytics dashboard
+
+## 🤝 Contributing
+
+We welcome contributions! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📬 Contact
+
+Your Name - [Mohiuddin](https://mohiuddin200.vercel.app/)
+
+Project Link: [GitHub](https://github.com/Mohiuddin-64bit)
